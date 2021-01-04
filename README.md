@@ -10,6 +10,35 @@ Hence the new NTU-X dataset, introduces a more detailed <b>118 joints</b> skelet
 
 <img src = "docs/images/NTU-X_sequence_diagram.png"/>
 
+### Overlayed Examples
+
+<table>
+<tr>
+<th/>
+<td align = "center"><b>NTU</b></th>
+<td align = "center"><b>NTU-X (ours)</b></th>
+</tr>
+
+<tr>
+<td><b>Write</b></td>
+<td><img src = "docs/images/write_kinect.gif"/></td>
+<td><img src = "docs/images/write_smplx.gif"/></td>
+</tr>
+
+<tr>
+<td><b>Read</b></td>
+<td><img src = "docs/images/read_kinect.gif"/></td>
+<td><img src = "docs/images/read_smplx.gif"/></td>
+</tr>
+
+<tr>
+<td><b>Eat Meal</b></td>
+<td><img src = "docs/images/eat_meal_kinect.gif"/></td>
+<td><img src = "docs/images/eat_meal_smplx.gif"/></td>
+</tr>
+
+</table>
+
 ### Comparing NTU-X to other popular action datasets.
 
 <table>
