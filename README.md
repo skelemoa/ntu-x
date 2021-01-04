@@ -199,3 +199,12 @@ NTU-X contains same classes as NTU RGB+D dataset. The action labels are mentione
 <td align = "center"><b>A60</b> walking apart from each other. </td>
 </tr>
 </table>
+
+
+### FAQs
+
+<b>1. How is the NTU-X dataset created?</b>
+
+<b>2. How the pose extractor (SMPLx/ExPose) is decided for each class?</b>
+
+<b>3. Which class IDs have ExPose used as pose extractor and which class IDs have SMPLx used as pose extractor? </b>
