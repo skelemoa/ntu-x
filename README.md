@@ -8,6 +8,8 @@ The original NTU dataset contains the human action skeleton which are captured u
 
 Hence the new NTU-X dataset, introduces a more detailed <b>118 joints</b> skeleton for the action sequences of the NTU dataset. This new dataset, along with 25 body joints, contains <b>42 finger joints</b> and <b>51 face joints</b>.
 
+<img src = "docs/images/NTU-X_sequence_diagram.png"/>
+
 ### Comparing NTU-X to other popular action datasets.
 
 <table>
