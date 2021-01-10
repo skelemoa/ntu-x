@@ -1,0 +1,25 @@
+# feeder
+feeder: feeders.feeder.Feeder
+test_feeder_args:
+  data_path: ./data/ntu60_smpl/xsub/joint_data/h5_data_118/test/
+  label_path: ./data/ntu60_smpl/xsub/joint_data/test_label.pkl
+  debug: False
+
+# model
+model: model.shift_gcn.Model
+model_args:
+  num_class: 60
+  num_point: 118
+  num_person: 2
+  graph: graph.ntu_rgb_d.Graph
+  graph_args:
+    labeling_mode: 'spatial'
+
+# test
+phase: test
+device: [0, 1]
+test_batch_size: 128
+weights: ./pretrained_models/ntu120_xsub_joint.pt
+
+work_dir: ./eval/ntu120/xsub/joint/
+save_score: True

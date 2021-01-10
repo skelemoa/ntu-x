@@ -1,0 +1,58 @@
+# Setting
+gpus: [0,1]
+seed: 1
+debug: False
+pretrained_path: './pretrained'
+work_dir: './workdir'
+no_progress_bar: False
+
+# Visualization
+visualization_class: 0
+visualization_sample: 0
+visualization_frames: []
+
+# Data Loader
+# ntu-xsub, ntu-xview, ntu-xsub120, ntu-xset120
+dataset: ntu-xsub120
+dataset_args:
+  ntu:
+    train_batch_size: 32
+    eval_batch_size: 64
+    preprocess: False
+    path: data//ntu60_smpl/xsub/joint_data/
+    ntu60_data_path: ./data/ntu60_smpl/xsub/joint_data/np_data_118/
+    ntu120_data_path: 
+
+# Model
+# pa, ca, fa, sa, pca, psa
+# b15, b19, b23, b29, n39, n51, n57, n75
+# r1, r2, r4, r8
+model_type: pa-resgcn-b19
+model_args:
+  kernel_size: [9,2]
+
+# Optimizer
+# SGD, Adam
+optimizer: SGD
+optimizer_args:
+  SGD:
+    lr: 0.1
+    momentum: 0.9
+    nesterov: True
+    weight_decay: 0.0002
+  Adam:
+    lr: 0.1
+    betas: [0.9,0.99]
+    weight_decay: 0.0002
+
+# Scheduler
+# step, cosine
+lr_scheduler: cosine
+scheduler_args:
+  step:
+    max_epoch: 70
+    warm_up: 10
+    step_lr: [20,50]
+  cosine:
+    max_epoch: 50
+    warm_up: 5

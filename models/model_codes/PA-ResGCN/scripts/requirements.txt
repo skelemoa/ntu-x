@@ -1,0 +1,4 @@
+seaborn
+pyyaml
+nvidia-ml-py3
+tensorboardX

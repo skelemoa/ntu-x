@@ -1,0 +1,20 @@
+[ Tue Jul 14 12:51:10 2020 ] Model total number of params: 5706328
+[ Tue Jul 14 12:51:10 2020 ] Loading weights from ./work_dir/smplx49/xsub_67/joint/weights/weights-40-16452.pt
+[ Tue Jul 14 12:51:11 2020 ] Can not find these weights:
+[ Tue Jul 14 12:51:47 2020 ] Model total number of params: 5705926
+[ Tue Jul 14 12:51:47 2020 ] Loading weights from ./work_dir/smplx49/xsub_67/joint/weights/weights-40-16452.pt
+[ Tue Jul 14 12:51:47 2020 ] 4 GPUs available, using DataParallel
+[ Tue Jul 14 12:51:47 2020 ] Model:   model.msg3d.Model
+[ Tue Jul 14 12:51:47 2020 ] Weights: ./work_dir/smplx49/xsub_67/joint/weights/weights-40-16452.pt
+[ Tue Jul 14 12:51:47 2020 ] Eval epoch: 1
+[ Tue Jul 14 12:52:28 2020 ] Model total number of params: 5705926
+[ Tue Jul 14 12:52:28 2020 ] Loading weights from ./work_dir/smplx49/xsub_67/joint/weights/weights-40-16452.pt
+[ Tue Jul 14 12:52:28 2020 ] 4 GPUs available, using DataParallel
+[ Tue Jul 14 12:52:28 2020 ] Model:   model.msg3d.Model
+[ Tue Jul 14 12:52:28 2020 ] Weights: ./work_dir/smplx49/xsub_67/joint/weights/weights-40-16452.pt
+[ Tue Jul 14 12:52:28 2020 ] Eval epoch: 1
+[ Tue Jul 14 12:53:24 2020 ] 	Mean test loss of 43 batches: 0.3451847527609315.
+[ Tue Jul 14 12:53:24 2020 ] 	Top 1: 0.00%
+[ Tue Jul 14 12:53:24 2020 ] 	Top 5: 0.00%
+[ Tue Jul 14 12:53:25 2020 ] Done.
+

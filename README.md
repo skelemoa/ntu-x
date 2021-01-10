@@ -99,6 +99,34 @@ Hence the new NTU-X dataset, introduces a more detailed <b>118 joints</b> skelet
 
 <i>Coming Soon...</i>
 
+### Results
+
+<table>
+<tr>
+  <th>Model</th>
+  <th>NTU60</th>
+  <th>NTU60-X</th>
+</tr>
+
+<tr>
+  <td>MsG3d</td>
+  <td>91.50</td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>PA-ResGCN</td>
+  <td>90.90</td>
+  <td><b>91.64</b></td>
+</tr>
+
+<tr>
+  <td>4s-ShiftGCN</td>
+  <td>90.70</td>
+  <td><b>91.78</b></td>
+</tr>
+</table>
+
 ### Pretained Models
 
 Few experiments are performed to benchmark this new dataset using the top performing models of the original NTU RGB+D dataset. Details about this models can be found at [Models](./models/)
