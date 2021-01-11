@@ -257,11 +257,19 @@ NTU-X contains same classes as NTU RGB+D dataset. The action labels are mentione
 </tr>
 </table>
 
-
+ 
 ### FAQs
 
 <b>1. How is the NTU-X dataset created?</b>
 
+It is collected by estimating 3D SMPL-X pose outputs from the RGB frames of the NTU-60 RGB videos. We use both[ SMPL-X](https://github.com/vchoutas/smplify-x) and
+[Expose](https://github.com/vchoutas/expose) to perform these estimations. 
+
 <b>2. How the pose extractor (SMPLx/ExPose) is decided for each class?</b>
 
+We use a semi-automatic approach to estimate the 3D pose for the videos of each class. Keeping the intra-view and intra-subject variance of the NTU dataset in mind, we sample random videos covering each view perclass of NTU and estimate the SMPL-X, ExPose outputs. The estimated skeleton is then backprojected to its 
+corresponding RGB frame and the accuracy of the alignment is used to select between SMPL-X and Expose. 
+
 <b>3. Which class IDs have ExPose used as pose extractor and which class IDs have SMPLx used as pose extractor? </b>
+
+ Empirically, we observe that ExPose,SMPL-X perform equally well for single-person actions but SMPL-X,  though  slow,  provides  better  pose  estimates  for multi-person action class sequences. 
