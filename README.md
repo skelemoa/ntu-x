@@ -22,7 +22,7 @@ Hence the new NTU-X dataset, introduces a more detailed <b>118 joints</b> skelet
 <tr>
   <td>MsG3d</td>
   <td>91.50</td>
-  <td></td>
+  <td>88.28</td>
 </tr>
 
 <tr>
