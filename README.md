@@ -12,7 +12,7 @@ Hence the new NTU-X dataset, introduces a more detailed <b>118 joints</b> skelet
 
 <img src = "docs/images/NTU-X_sequence_diagram.png"/>
 
-### Results
+### [Results](https://arxiv.org/pdf/2101.11529.pdf)
 
 <table>
 <tr>
