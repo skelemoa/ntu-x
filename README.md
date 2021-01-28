@@ -1,6 +1,6 @@
 # NTU-X
 
-This repository contains details and pretrained models for the newly introduced dataset NTU-X, which is an extended version of popular NTU dataset.
+This repository contains details and pretrained models for the newly introduced dataset NTU-X, which is an extended version of popular NTU dataset. The paper has been sumitted to ICIP-2021 and is also available on arxiv [here](https://arxiv.org/pdf/2101.11529.pdf)
 
 ### What is NTU-X
 
