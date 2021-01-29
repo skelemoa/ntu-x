@@ -40,9 +40,9 @@ Hence the new NTU-X dataset, introduces a more detailed <b>118 joints</b> skelet
 </tr>
 </table>
 
-<!--
 ### Overlayed Examples
 
+<!--
 <table>
 <tr>
 <th/>
@@ -70,6 +70,7 @@ Hence the new NTU-X dataset, introduces a more detailed <b>118 joints</b> skelet
 
 </table>
 -->
+
 
 ### Comparing NTU-X to other popular action datasets.
 
