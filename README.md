@@ -42,7 +42,6 @@ Hence the new NTU-X dataset, introduces a more detailed <b>118 joints</b> skelet
 
 ### Overlayed Examples
 
-<!--
 <table>
 <tr>
 <th/>
@@ -69,7 +68,6 @@ Hence the new NTU-X dataset, introduces a more detailed <b>118 joints</b> skelet
 </tr>
 
 </table>
--->
 
 
 ### Comparing NTU-X to other popular action datasets.
@@ -262,34 +260,34 @@ NTU-X contains same classes as NTU RGB+D dataset. The action labels are mentione
 </tr>
 </table>
 
- 
+
 ### FAQs
 
 <b>1. How is the NTU-X dataset created?</b>
 
 It is collected by estimating 3D SMPL-X pose outputs from the RGB frames of the NTU-60 RGB videos. We use both[ SMPL-X](https://github.com/vchoutas/smplify-x) and
-[Expose](https://github.com/vchoutas/expose) to perform these estimations. 
+[Expose](https://github.com/vchoutas/expose) to perform these estimations.
 
 <b>2. How the pose extractor (SMPLx/ExPose) is decided for each class?</b>
 
-We use a semi-automatic approach to estimate the 3D pose for the videos of each class. Keeping the intra-view and intra-subject variance of the NTU dataset in mind, we sample random videos covering each view perclass of NTU and estimate the SMPL-X, ExPose outputs. The estimated skeleton is then backprojected to its 
-corresponding RGB frame and the accuracy of the alignment is used to select between SMPL-X and Expose. 
+We use a semi-automatic approach to estimate the 3D pose for the videos of each class. Keeping the intra-view and intra-subject variance of the NTU dataset in mind, we sample random videos covering each view perclass of NTU and estimate the SMPL-X, ExPose outputs. The estimated skeleton is then backprojected to its
+corresponding RGB frame and the accuracy of the alignment is used to select between SMPL-X and Expose.
 
 <b>3. Which class IDs have ExPose used as pose extractor and which class IDs have SMPLx used as pose extractor? </b>
 
  Empirically, we observe that ExPose,SMPL-X perform equally well for single-person actions but SMPL-X,  though  slow,  provides  better  pose  estimates  for multi-person action class sequences. The classes selected for SMPL-X and Expose are as follows:
- 
+
  #### Expose
- 
+
  * A1.  drink water
- 
+
  * A2. eat meal/snack
- 
+
  * A3. A3. brushing teeth.
- 
+
  * A4. brushing hair.
- 
- * A8. sitting down. 
+
+ * A8. sitting down.
 
  * A9. standing up (from sitting position).
 
@@ -336,7 +334,7 @@ corresponding RGB frame and the accuracy of the alignment is used to select betw
  * A42. staggering.
 
  * A43. falling.
-   
+
  * A44. touch head (headache).
 
  * A46. touch back (backache).
@@ -350,7 +348,7 @@ corresponding RGB frame and the accuracy of the alignment is used to select betw
 #### SMPL-X
 
  * A5. drop.
- 
+
  * A6. pickup.
 
  * A7. throw.
