@@ -2,7 +2,7 @@
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/ntu60-x-towards-skeleton-based-recognition-of/skeleton-based-action-recognition-on-ntu60-x)](https://paperswithcode.com/sota/skeleton-based-action-recognition-on-ntu60-x?p=ntu60-x-towards-skeleton-based-recognition-of)
 
-This repository contains details and pretrained models for the newly introduced dataset NTU-X, which is an extended version of popular NTU dataset. For additional details and results on experiments using NTU60-X, take a look at the paper [NTU60-X: Towards Skeleton-based Recognition of Subtle Human Actions](https://arxiv.org/pdf/2101.11529.pdf)
+This repository contains details and pretrained models for the newly introduced dataset NTU-X, which is an extended version of popular NTU dataset. For additional details and results on experiments using NTU-X, take a look at the paper [NTU60-X: Towards Skeleton-based Recognition of Subtle Human Actions](https://arxiv.org/pdf/2101.11529.pdf)
 
 ### What is NTU-X
 
@@ -19,24 +19,32 @@ Hence the new NTU-X dataset, introduces a more detailed <b>118 joints</b> skelet
   <th>Model</th>
   <th>NTU60</th>
   <th>NTU60-X</th>
+  <th>NTU120</th>
+  <th>NTU120-X</th>
 </tr>
 
 <tr>
   <td>MsG3d</td>
   <td>91.50</td>
   <td><b>91.76</b></td>
+  <td>86.90</td>
+  <td><b>87.1</b></td?>
 </tr>
 
 <tr>
   <td>PA-ResGCN</td>
   <td>90.90</td>
   <td><b>91.64</b></td>
+  <td><b>87.30</b></td>
+  <td>85.77</td>
 </tr>
 
 <tr>
   <td>4s-ShiftGCN</td>
   <td>90.70</td>
   <td><b>91.78</b></td>
+  <td>85.90</td>
+  <td><b>86.18</b></td>
 </tr>
 </table>
 
@@ -115,13 +123,33 @@ Hence the new NTU-X dataset, introduces a more detailed <b>118 joints</b> skelet
 </tr>
 
 <tr>
-<td align = "center"><b>NTU-X (Ours)</b></td>
+<td align = "center">NTU-RGB+D 120</td>
+<td align = "center">:heavy_check_mark:</td>
+<td/>
+<td/>
+<td align = "center">25</td>
+<td align = "center">114035</td>
+<td align = "center">120</td>
+</tr>
+
+<tr>
+<td align = "center"><b>NTU60-X (Ours)</b></td>
 <td align = "center">:heavy_check_mark:</td>
 <td align = "center">:heavy_check_mark:</td>
 <td align = "center">:heavy_check_mark:</td>
 <td align = "center"><b>118</b></td>
 <td align = "center"><b>56148</b></td>
 <td align = "center"><b>60</b></td>
+</tr>
+
+<tr>
+<td align = "center"><b>NTU120-X (Ours)</b></td>
+<td align = "center">:heavy_check_mark:</td>
+<td align = "center">:heavy_check_mark:</td>
+<td align = "center">:heavy_check_mark:</td>
+<td align = "center"><b>118</b></td>
+<td align = "center"><b>113821</b></td>
+<td align = "center"><b>120</b></td>
 </tr>
 
 </table>
@@ -258,6 +286,108 @@ NTU-X contains same classes as NTU RGB+D dataset. The action labels are mentione
 <td align = "center"><b>A59</b> walking towards each other. </td>
 <td align = "center"><b>A60</b> walking apart from each other. </td>
 </tr>
+
+<tr>
+<td align = "center"><b>A61</b> put on headphone.</td>
+<td align = "center"><b>A62</b> take off headphone.</td>
+<td align = "center"><b>A63</b> shoot at the basket.</td>
+</tr>
+<tr>
+<td align = "center"><b>A64</b> bounce ball.</td>
+<td align = "center"><b>A65</b> tennis bat swing.</td>
+<td align = "center"><b>A66</b> juggling table tennis balls.</td>
+</tr>
+<tr>
+<td align = "center"><b>A67</b> hush (quite).</td>
+<td align = "center"><b>A68</b> flick hair.</td>
+<td align = "center"><b>A69</b> thumb up.</td>
+</tr>
+<tr>
+<td align = "center"><b>A70</b> thumb down.</td>
+<td align = "center"><b>A71</b> make ok sign.</td>
+<td align = "center"><b>A72</b> make victory sign.</td>
+</tr>
+<tr>
+<td align = "center"><b>A73</b> staple book.</td>
+<td align = "center"><b>A74</b> counting money.</td>
+<td align = "center"><b>A75</b> cutting nails.</td>
+</tr>
+<tr>
+<td align = "center"><b>A76</b> cutting paper (using scissors).</td>
+<td align = "center"><b>A77</b> snapping fingers.</td>
+<td align = "center"><b>A78</b> open bottle.</td>
+</tr>
+<tr>
+<td align = "center"><b>A79</b> sniff (smell).</td>
+<td align = "center"><b>A80</b> squat down.</td>
+<td align = "center"><b>A81</b> toss a coin.</td>
+</tr>
+<tr>
+<td align = "center"><b>A82</b> fold paper.</td>
+<td align = "center"><b>A83</b> ball up paper</td>
+<td align = "center"><b>A84</b> play magic cube.</td>
+</tr>
+<tr>
+<td align = "center"><b>A85</b> apply cream on face.</td>
+<td align = "center"><b>A86</b> apply cream on hand back.</td>
+<td align = "center"><b>A87</b> put on bag.</td>
+</tr>
+<tr>
+<td align = "center"><b>A88</b> take off bag.</td>
+<td align = "center"><b>A89</b> put something into a bag.</td>
+<td align = "center"><b>A90</b> take something out of a bag.</td>
+</tr>
+<tr>
+<td align = "center"><b>A91</b> open a box.</td>
+<td align = "center"><b>A92</b> move heavy objects.</td>
+<td align = "center"><b>A93</b> shake fist.</td>
+</tr>
+<tr>
+<td align = "center"><b>A94</b> throw up cap/hat.</td>
+<td align = "center"><b>A95</b> hands up (both hands).</td>
+<td align = "center"><b>A96</b> cross arms.</td>
+</tr>
+<tr>
+<td align = "center"><b>A97</b> arm circles.</td>
+<td align = "center"><b>A98</b> arm swings.</td>
+<td align = "center"><b>A99</b> running on the spot.</td>
+</tr>
+<tr>
+<td align = "center"><b>A100</b>	butt kicks (kick backward).</td>
+<td align = "center"><b>A101</b>	cross toe touch.</td>
+<td align = "center"><b>A102</b>	side kick.</td>
+</tr>
+<tr>
+<td align = "center"><b>A103</b>	yawn.</td>
+<td align = "center"><b>A104</b>	stretch oneself.</td>
+<td align = "center"><b>A105</b>	blow nose.</td>
+</tr>
+<tr>
+<td align = "center"><b>A106</b>	hit other person with something.</td>
+<td align = "center"><b>A107</b>	wield knife towards other person.</td>
+<td align = "center"><b>A108</b>	knock over other person (hit with body).</td>
+</tr>
+<tr>
+<td align = "center"><b>A109</b>	grab other person’s stuff.</td>
+<td align = "center"><b>A110</b>	shoot at other person with a gun.</td>
+<td align = "center"><b>A111</b>	step on foot.</td>
+</tr>
+<tr>
+<td align = "center"><b>A112</b>	high-five.</td>
+<td align = "center"><b>A113</b>	cheers and drink.</td>
+<td align = "center"><b>A114</b>	carry something with other person.</td>
+</tr>
+<tr>
+<td align = "center"><b>A115</b>	take a photo of other person.</td>
+<td align = "center"><b>A116</b>	follow other person.</td>
+<td align = "center"><b>A117</b>	whisper in other person’s ear.</td>
+</tr>
+<tr>
+<td align = "center"><b>A118</b>	exchange things with other person.</td>
+<td align = "center"><b>A119</b>	support somebody with hand.</td>
+<td align = "center"><b>A120</b> finger-guessing game (playing rock-paper-scissors).</td>
+</tr>
+
 </table>
 
 
@@ -279,124 +409,127 @@ corresponding RGB frame and the accuracy of the alignment is used to select betw
 
  #### Expose
 
- * A1.  drink water
+* A1.  drink water
+* A2. eat meal/snack
+* A3. brushing teeth.
+* A4. brushing hair.
+* A8. sitting down.
+* A9. standing up (from sitting position).
+* A12. writing.
+* A14. wear jacket.
+* A15. take off jacket.
+* A16. wear a shoe.
+* A17. take off a shoe.
+* A18. wear on glasses.
+* A19. take off glasses.
+* A20. put on a hat/cap.
+* A21. take off a hat/cap.
+* A24. kicking something.
+* A25. reach into pocket.
+* A26. hopping (one foot jumping).
+* A29. playing with phone/tablet.
+* A30. typing on a keyboard.
+* A33. check time (from watch).
+* A34. rub two hands together.
+* A36. shake head.
+* A37. wipe face.
+* A38. salute.
+* A41. sneeze/cough.
+* A42. staggering.
+* A43. falling.
+* A44. touch head (headache).
+* A46. touch back (backache).
+* A47. touch neck (neckache).
+* A48. nausea or vomiting condition.
+* A49. use a fan (with hand or paper)/feeling warm.
+* A61. put on headphone.
+* A62. take off headphone.
+* A63. shoot at the basket.
+* A64. bounce ball.
+* A65. tennis bat swing.
+* A68. flick hair.
+* A71. make ok sign.
+* A72. make victory sign.
+* A73. staple book.
+* A75. cutting nails.
+* A76. cutting paper (using scissors).
+* A78. open bottle.
+* A79. sniff (smell).
+* A80. squat down.
+* A82. fold paper.
+* A83. ball up paper.
+* A84. play magic cube.
+* A85. apply cream on face.
+* A86. apply cream on hand back.
+* A87. put on bag.
+* A88. take off bag.
+* A89. put something into a bag.
+* A90. take something out of a bag.
+* A91. open a box.
+* A92. move heavy objects.
+* A93. shake fist.
+* A94. throw up cap/hat.
+* A95. hands up (both hands).
+* A96. cross arms.
+* A97. arm circles.
+* A98. arm swings.
+* A99. running on the spot.
+* A100.	butt kicks (kick backward).
+* A101.	cross toe touch.
+* A103.	yawn.
+* A104.	stretch oneself.
+* A105.	blow nose.
+* A106.	hit other person with something.
+* A107.	wield knife towards other person.
+* A108.	knock over other person (hit with body).
+* A111.	step on foot.
+* A112.	high-five.
+* A114.	carry something with other person.
+* A119.	support somebody with hand.
 
- * A2. eat meal/snack
-
- * A3. A3. brushing teeth.
-
- * A4. brushing hair.
-
- * A8. sitting down.
-
- * A9. standing up (from sitting position).
-
- * A12. writing.
-
- * A14. wear jacket.
-
- * A15. take off jacket.
-
- * A16. wear a shoe.
-
- * A17. take off a shoe.
-
- * A18. wear on glasses.
-
- * A19. take off glasses.
-
- * A20. put on a hat/cap.
-
- * A21. take off a hat/cap.
-
- * A24. kicking something.
-
- * A25. reach into pocket.
-
- * A26. hopping (one foot jumping).
-
- * A29. playing with phone/tablet.
-
- * A30. typing on a keyboard.
-
- * A33. check time (from watch).
-
- * A34. rub two hands together.
-
- * A36. shake head.
-
- * A37. wipe face.
-
- * A38. salute.
-
- * A41. sneeze/cough.
-
- * A42. staggering.
-
- * A43. falling.
-
- * A44. touch head (headache).
-
- * A46. touch back (backache).
-
- * A47. touch neck (neckache).
-
- * A48. nausea or vomiting condition.
-
- * A49. use a fan (with hand or paper)/feeling warm.
 
 #### SMPL-X
 
  * A5. drop.
-
  * A6. pickup.
-
  * A7. throw.
-
  * A10. clapping.
-
  * A11. reading.
-
  * A13. tear up paper.
-
  * A22. cheer up.
-
  * A23. hand waving.
-
  * A27. jump up.
-
  * A28. make a phone call/answer phone.
-
  * A31. pointing to something with finger.
-
  * A32. taking a selfie.
-
  * A35. nod head/bow.
-
  * A39. put the palms together.
-
  * A40. cross hands in front (say stop).
-
  * A45. touch chest (stomachache/heart pain).
-
  * A50. punching/slapping other person.
-
  * A51. kicking other person.
-
  * A52. pushing other person.
-
  * A53. pat on back of other person.
-
  * A54. point finger at the other person.
-
  * A55. hugging other person.
-
  * A56. giving something to other person.
-
  * A57. touch other person's pocket.
-
  * A58. handshaking.
-
  * A59. walking towards each other.
-
  * A60. walking apart from each other.
+ * A66. juggling table tennis balls.
+ * A67. hush (quite).
+ * A69. thumb up.
+ * A70. thumb down.
+ * A74. counting money.
+ * A77. snapping fingers.
+ * A81. toss a coin.
+ * A102.	side kick.
+ * A109.	grab other person’s stuff.
+ * A110.	shoot at other person with a gun.
+ * A113.	cheers and drink.
+ * A115.	take a photo of other person.
+ * A116.	follow other person.
+ * A117.	whisper in other person’s ear.
+ * A118.	exchange things with other person.
+ * A120. finger-guessing game (playing rock-paper-scissors). 
