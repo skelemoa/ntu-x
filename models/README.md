@@ -12,6 +12,7 @@ There are two main sub directories here:
 
 The main models considered for the benchmarking are:
 
+- [DSTA-Net](https://github.com/lshiwjx/DSTA-Net)
 - [MSG3d](https://github.com/kenziyuliu/ms-g3d)
 - [PA-ResGCN](https://github.com/yfsong0709/ResGCNv1)
 - [4s-ShiftGCN](https://github.com/kchengiva/Shift-GCN)
@@ -20,9 +21,9 @@ The main models considered for the benchmarking are:
 
 ### Changes made in the code for each model:
 
-#### MSg3d and ShiftGCN
+#### DSTA-Net, MSg3d and ShiftGCN
 
-The only change that is made in the code base of these two models in the new definition of the graphs with the includsion of additional joints of NTU-X dataset. These changes can be seen for Msg3d  [here](./model_codes/MsG3d/graph/ntu_rgb_d.py) and for 4s-ShiftGCN [here](./model_codes/4s-ShiftGCN/graph/ntu_rgb_d.py)
+The only change that is made in the code base of these two models in the new definition of the graphs with the includsion of additional joints of NTU-X dataset. These changes can be seen for DSTA-Net [here](./model_codes/DSTA-Net/graph/ntu_rgb_d.py), for Msg3d  [here](./model_codes/MsG3d/graph/ntu_rgb_d.py) and for 4s-ShiftGCN [here](./model_codes/4s-ShiftGCN/graph/ntu_rgb_d.py)
 
 
 #### PA-ResGCNv1

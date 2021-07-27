@@ -1,0 +1,61 @@
+Experiment_name: ntu_joint_xsub
+base_lr: 0.1
+batch_size: 32
+config: ./config/nturgbd-cross-subject/train_joint.yaml
+device:
+- 0
+- 1
+- 2
+- 3
+eval_interval: 5
+feeder: feeders.feeder.Feeder
+groups: 8
+ignore_weights: []
+keep_rate: 0.9
+log_interval: 100
+model: model.decouple_gcn.Model
+model_args:
+  block_size: 41
+  graph: graph.ntu_rgb_d.Graph
+  graph_args:
+    labeling_mode: spatial
+  groups: 16
+  num_class: 60
+  num_person: 2
+  num_point: 67
+model_saved_name: ./save_models/ntu_joint_xsub
+nesterov: true
+num_epoch: 200
+num_worker: 32
+only_train_epoch: 1
+only_train_part: true
+optimizer: SGD
+phase: train
+print_log: true
+save_interval: 2
+save_score: false
+seed: 1
+show_topk:
+- 1
+- 5
+start_epoch: 0
+step:
+- 60
+- 80
+test_batch_size: 64
+test_feeder_args:
+  data_path: ./data/ntu60_smpl/xsub/joint_data/h5_data_118/test/
+  label_path: ./data/ntu60_smpl/xsub/test_label.pkl
+train_feeder_args:
+  data_path: ./data/ntu60_smpl/xsub/joint_data/h5_data_118/train/
+  debug: false
+  label_path: ./data/ntu60_smpl/xsub/train_label.pkl
+  normalization: false
+  random_choose: false
+  random_move: false
+  random_shift: false
+  window_size: -1
+warm_up_epoch: 0
+weight_decay: 0.0001
+weights: null
+work_dir: ./work_dir/ntu_joint_xsub
