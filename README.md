@@ -25,17 +25,19 @@ Hence the new NTU-X dataset, introduces a more detailed <b>118 joints</b> skelet
 <tr>
   <td>DSTA-Net</td>
   <td>91.50</td>
-  <td><b>93.56</b></td>
+  <td style="background-color:cyan"><b>93.56</b></td>
   <td>86.60</td>
   <td><b>87.80</b></td?>
 </tr>
+
 <tr>
-  <td>MsG3d</td>
-  <td>91.50</td>
-  <td><b>91.76</b></td>
+  <td>CTR-GCN</td>
+  <td>92.40</td>
+  <td><b>92.92</b></td>
+  <td style="background-color:cyan"><b>88.90</b></td>
   <td>86.90</td>
-  <td><b>87.10</b></td?>
 </tr>
+
 
 <tr>
   <td>4s-ShiftGCN</td>
@@ -46,12 +48,23 @@ Hence the new NTU-X dataset, introduces a more detailed <b>118 joints</b> skelet
 </tr>
 
 <tr>
+  <td>MsG3d</td>
+  <td>91.50</td>
+  <td><b>91.76</b></td>
+  <td>86.90</td>
+  <td><b>87.10</b></td?>
+</tr>
+
+
+<tr>
   <td>PA-ResGCN</td>
   <td>90.90</td>
   <td><b>91.64</b></td>
   <td><b>87.30</b></td>
   <td>86.42</td>
 </tr>
+
+
 
 
 </table>

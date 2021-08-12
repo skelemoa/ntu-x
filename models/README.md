@@ -16,14 +16,15 @@ The main models considered for the benchmarking are:
 - [MSG3d](https://github.com/kenziyuliu/ms-g3d)
 - [PA-ResGCN](https://github.com/yfsong0709/ResGCNv1)
 - [4s-ShiftGCN](https://github.com/kchengiva/Shift-GCN)
+- [CTR-GCN](https://github.com/Uason-Chen/CTR-GCN)
 
 (The codes of the models are taken from the repositories of these models hyperlinked in the above list. The codes included in this repo are modified to be trained on NTU-X data)
 
 ### Changes made in the code for each model:
 
-#### DSTA-Net, MSg3d and ShiftGCN
+#### DSTA-Net, MSg3d, CTR-GCN and ShiftGCN
 
-The only change that is made in the code base of these two models in the new definition of the graphs with the includsion of additional joints of NTU-X dataset. These changes can be seen for DSTA-Net [here](./model_codes/DSTA-Net/graph/ntu_rgb_d.py), for Msg3d  [here](./model_codes/MsG3d/graph/ntu_rgb_d.py) and for 4s-ShiftGCN [here](./model_codes/4s-ShiftGCN/graph/ntu_rgb_d.py)
+The only change that is made in the code base of these two models in the new definition of the graphs with the includsion of additional joints of NTU-X dataset. These changes can be seen for DSTA-Net [here](./model_codes/DSTA-Net/graph/ntu_rgb_d.py), for Msg3d  [here](./model_codes/MsG3d/graph/ntu_rgb_d.py), for CTR-GCN [here](./model_codes/CTR-GCN/graph/ntu_rgb_d.py) and for 4s-ShiftGCN [here](./model_codes/4s-ShiftGCN/graph/ntu_rgb_d.py)
 
 
 #### PA-ResGCNv1

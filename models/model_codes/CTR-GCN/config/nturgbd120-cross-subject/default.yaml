@@ -1,0 +1,49 @@
+work_dir: /ssd_scratch/cvit/anirudh.thatipelli/work_dir/ntu120_xsub_joint_motion
+
+# feeder
+feeder: feeders.feeder_ntu.Feeder
+train_feeder_args:
+  data_path: data/ntu120/NTU120_CSub.npz
+  split: train
+  debug: False
+  random_choose: False
+  random_shift: False
+  random_move: False
+  window_size: 64
+  normalization: False
+  random_rot: True
+  p_interval: [0.5, 1]
+  vel: True
+  bone: False
+
+test_feeder_args:
+  data_path: data/ntu120/NTU120_CSub.npz
+  split: test
+  window_size: 64
+  p_interval: [0.95]
+  vel: True
+  bone: False
+  debug: False
+
+# model
+model: model.ctrgcn.Model
+model_args:
+  num_class: 120
+  num_point: 67
+  num_person: 2
+  graph: graph.ntu_rgb_d.Graph
+  graph_args:
+    labeling_mode: 'spatial'
+
+#optim
+weight_decay: 0.0004
+base_lr: 0.1
+step: [35, 55]
+warm_up_epoch: 5
+
+# training
+device: [0,1,2,3]
+batch_size: 32
+test_batch_size: 32
+num_epoch: 200
+nesterov: True
