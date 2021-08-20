@@ -2,7 +2,7 @@
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/ntu60-x-towards-skeleton-based-recognition-of/skeleton-based-action-recognition-on-ntu60-x)](https://paperswithcode.com/sota/skeleton-based-action-recognition-on-ntu60-x?p=ntu60-x-towards-skeleton-based-recognition-of)
 
-This repository contains details and pretrained models for the newly introduced dataset NTU-X, which is an extended version of popular NTU dataset. For additional details and results on experiments using NTU-X, take a look at the paper [NTU60-X: Towards Skeleton-based Recognition of Subtle Human Actions](https://arxiv.org/pdf/2101.11529.pdf)
+This repository contains details and pretrained models for the newly introduced dataset NTU-X, which is an extended version of popular NTU dataset. For additional details and results on experiments using NTU-X, take a look at the paper [NTU60-X: Towards Skeleton-based Recognition of Subtle Human Actions](https://arxiv.org/pdf/2101.11529v3.pdf)
 
 ### What is NTU-X
 
