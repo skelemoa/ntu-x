@@ -177,7 +177,7 @@ Hence the new NTU-X dataset, introduces a more detailed <b>118 joints</b> skelet
 
 ### Download NTU-X dataset
 
-<i>Coming Soon...</i>
+<i>For many months, we have been awaiting permission from <a href="https://www.ntu.edu.sg/rose">ROSE Lab</a>, creators of NTU-RGBD dataset. We will be most happy to release the dataset once we receive their consent.</i>
 
 ### Pretained Models
 
