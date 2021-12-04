@@ -33,7 +33,7 @@ Hence the new NTU-X dataset, introduces a more detailed <b>118 joints</b> skelet
 <tr>
   <td>CTR-GCN</td>
   <td>92.40</td>
-  <td  style="background-color:cyan"><b>93.95</b></td>
+  <td  style="background-color:cyan"><b>93.90</b></td>
   <td style="background-color:cyan"><b>88.90</b></td>
   <td>88.36</td>
 </tr>
