@@ -2,7 +2,27 @@
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/ntu60-x-towards-skeleton-based-recognition-of/skeleton-based-action-recognition-on-ntu60-x)](https://paperswithcode.com/sota/skeleton-based-action-recognition-on-ntu60-x?p=ntu60-x-towards-skeleton-based-recognition-of)
 
-This repository contains details and pretrained models for the newly introduced dataset NTU-X, which is an extended version of popular NTU dataset. For additional details and results on experiments using NTU-X, take a look at the paper [NTU60-X: Towards Skeleton-based Recognition of Subtle Human Actions](https://arxiv.org/pdf/2101.11529v3.pdf)
+This repository contains details and pretrained models for the newly introduced dataset NTU-X, which is an extended version of popular NTU dataset. For additional details and results on experiments using NTU-X, take a look at the paper [NTU-X: An Enhanced Large-scale Dataset for Improving Pose-based Recognition of Subtle Human Actions
+](https://arxiv.org/pdf/2101.11529v4.pdf)
+
+<div align="center">
+    <a href="https://youtu.be/7S7kh7yw5_E">
+        <img src="https://img.shields.io/badge/Watch on YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/>
+    </a>
+<br>
+<table>
+    <tr>
+        <td>
+            <a href="https://youtu.be/7S7kh7yw5_E" target="_blank">
+                <img src="http://img.youtube.com/vi/7S7kh7yw5_E/maxresdefault.jpg" alt="Watch the video" width="640" height="360" border="5"/>
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <th><samp> Video Overview(Click on Image above)</samp></th>
+    </tr>
+</table>
+</div>
 
 ### What is NTU-X
 
